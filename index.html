@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="static/script.js"></script>
+<link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+<h2>I AM TOBY BOT! We can talk about anything you want, from unicorns to attack helicopters!</h2>
+<table>
+<tr>
+<td>
+<img src="/static/toby_bot.jpg" width=300>
+</td>
+<td>
+<ul>
+<li>You can give me a topic to talk about!</li>
+<li>You can ask me devious questions!</li>
+<li>You can use me to order a ham and octopus pizza! (you need to have the TobyBot Pizza Oven Computer Chip though...)</li>
+<li>You can learn all <a href='about'>about</a> what makes me tick</li>
+<li>You can read my source code in the <a href="https://github.com/BitToby777/TobyBot/">GitHub Repo</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<div id="tobyThinkingStatus" class="thinking-text"></div>
+<textarea id="myTextarea" rows=12>TobyBot: Hello! I am Tobybot, the greatest bot to ever rule the Robot Kingdom. What topic shall I enlighten on top of the muddy world? Tell me in one to three words!</textarea>
+<br>
+<input type="text" size=80 id="myInput" placeholder="Type something AWESOME to me and click Send or hit ENTER! ">
+<button onclick="handleSend()" id="sendButton">Send</button>
+<button onclick="handleTellMeMore()" hidden="hidden" id="tellMeMore">Tell Me More</button>
+<button onclick="handleResetTopic()" hidden="hidden" id="resetTopic">Change Epic Topic</button>
+
+
+<h4 id="topicHeader">Current Epic Topic: Nothing yet!</h4>
+<hr>
+<p>TobyBot uses encyclopedic content derived from <a href='https://www.wikipedia.org'>Wikipedia</a> released under the <a href='https://creativecommons.org/licenses/by-sa/4.0/'>Commons Attribution-ShareAlike 4.0 License</a>.</p>
+</body>
+</html>

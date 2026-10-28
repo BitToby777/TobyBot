@@ -1,0 +1,27 @@
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl status docker
+sudo docker run hello-world
+
+(run these commands every time you change your web site)
+docker ps -all
+(this gets the id of the site)
+docker stop zxczxcv
+docker rm asdfasdf
+
+docker build -t tobybot .
+docker run -d --name tobybot -p 80:80 tobybot
+
+docker ps -all
+
+Go here to veiw the web site:
+http://localhost/
+
+docker logs asdfasdf
+(this shows you any errors or prints from python)
+
+CTRL-SHIFT-I brings up the Javascript error screen in your browser
