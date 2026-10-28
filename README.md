@@ -11,15 +11,10 @@ TobyBot is live at: http://tobybot.io
 <br>
 <p>    TobyBot uses Python code for the functions that load data for a given topic from Wikipedia into a list and match user questions to facts in the list. The Python code sits behind a Fast API web server running in a Docker container. Client-side Javascript lets the user's browser communicate with the Fast API methods.</p>
 
-<table>
-<tr>
-<td>
-<img src="/static/toby_bot.jpg" width=300>
-</td>
-<td>
 <ul>
 <li>TobyBot's favorite activity is learning crazy facts about the most random topics!</li>
 <li>TobyBot's favorite drink is Knowledge Soda, and he uses this to give you THE JUICE!</li>
 <li>TobyBot's favorite food is Pizza! Just like TobyHuman, who sleeps in a cool pizza oven!</li>
 <li>TobyBot knows information about over 7 million topics! How could you ever get bored???</li>
 <li>TobyBot's birthday is December 22nd, 2025! He has gone through over 60 versions since then.</li>
+</ul>
